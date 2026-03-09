@@ -1,16 +1,18 @@
 import React from 'react'
-import { BrowserRouter, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import Footer from './components/footer'
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
-          <Router>
-            <Routes path='/' element={<Home />} />
-          </Router>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+        <Footer brandName="Kixkys" />
+      </div>
+    </BrowserRouter>
   )
 }
 
