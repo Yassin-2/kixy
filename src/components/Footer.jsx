@@ -2,10 +2,9 @@ import React from 'react'
 
 
 const Footer = ({ 
-  brandName = 'Kixkys', 
+  brandName = 'Kixys', 
   links = {
     'Shop Shoes': ['Running Shoes', 'Casual Shoes', 'Formal Shoes', 'Sports Shoes', 'Sandals', 'Boots'],
-    'Customer Service': ['Track Order', 'Returns & Exchanges', 'Shipping Info', 'Size Guide', 'FAQ', 'Contact Us'],
     'About Us': ['Our Story', 'Careers', 'Store Locator', 'Press', 'Sustainability', 'Blog'],
     'Connect': ['Facebook', 'Instagram', 'Twitter', 'YouTube', 'Newsletter']
   }
@@ -19,9 +18,9 @@ const Footer = ({
      
 
      
-      <div className="bg-gray-900 py-10">
+      <div className="bg-gray-900 py-2 justify-center items-center" >
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-16 mx-20">
             {categories.map(([category, items], catIndex) => (
               <div key={catIndex}>
                 <h3 className="font-bold text-sm mb-4">{category}</h3>
