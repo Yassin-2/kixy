@@ -19,7 +19,7 @@ export default function Home(){
 
   return (
     <div>
-      <section className="py-12 bg-gray-700">
+      <section className="py-12 bg-gray-950">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <h1 className="text-3xl font-bold text-center col-span-full">Our Services</h1>
           {services.map((service, index) => (
